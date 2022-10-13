@@ -1,8 +1,9 @@
 import * as React from "react"
+import NavBar from "../components/navbar"
+import HomeCarousel from "../components/homeCarousel"
 
 const pageStyles = {
   color: "#232129",
-  padding: 96,
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
 }
 const headingStyles = {
@@ -126,6 +127,8 @@ const links = [
 const IndexPage = () => {
   return (
     <main style={pageStyles}>
+      <NavBar></NavBar>
+      <HomeCarousel></HomeCarousel>
       <h1 style={headingStyles}>
         Congratulations
         <br />
