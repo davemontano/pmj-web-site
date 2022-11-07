@@ -33,6 +33,6 @@
     "react-responsive-carousel": "^3.2.23"
   },
   "engines" : { 
-    "node" : "16.8.0"
+    "node" : "16.18.0"
   }
 }
