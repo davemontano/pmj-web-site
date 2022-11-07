@@ -1,7 +1,17 @@
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 
-    font-family: "Brown", regular;
+  font-family: "Montserrat", sans-serif;
 }
 
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+}

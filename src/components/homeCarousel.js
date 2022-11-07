@@ -18,8 +18,8 @@ const ArrowButton = styled.button`
   position: absolute;
   z-index: 2;
   top: calc(50% - 15px);
-  width: 25;
-  height: 40;
+  width: 25px;
+  height: 40px;
   cursor: pointer;
   background: none;
   border: none;
@@ -33,7 +33,7 @@ const NextButton = (onClickHandler, hasNext, label) =>
       title={label}
       style={{ right: 15 }}
     >
-      <ArrowForwardIosIcon htmlColor="#FFFFFF" />
+      <ArrowForwardIosIcon htmlColor="#FFFFFF" fontSize="large" />
     </ArrowButton>
   )
 
