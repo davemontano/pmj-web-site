@@ -39,7 +39,7 @@ const NavButton = styled.ul`
   text-transform: uppercase;
   text-align: center;
   :hover {
-    background-color: red;
+    background-color: #E81818;
   }
 `
 
@@ -74,11 +74,13 @@ const NavBar = () => {
                 </NavButton>
               </Grid>
               <Grid item xs={2}>
-                <NavButton>Nosotros</NavButton>
+                <NavButton>
+                  <NavLink to="/nosotros/intro">Nosotros</NavLink>
+                </NavButton>
               </Grid>
               <Grid item xs={2}>
                 <NavButton onClick={handleClick} id="proyectos-button">
-                  Proyectos
+                  <NavLink to="/proyectos">Proyectos</NavLink>
                 </NavButton>
                 <Menu
                   id="proyectos-menu"
@@ -86,7 +88,7 @@ const NavBar = () => {
                   open={open}
                   onClose={handleClose}
                   MenuListProps={{
-                    "aria-labelledby": "proectos-button",
+                    "aria-labelledby": "proyectos-button",
                   }}
                   TransitionComponent={Fade}
                 >

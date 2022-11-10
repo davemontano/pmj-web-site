@@ -53,8 +53,6 @@ const Footer = () => {
           Contactanos
         </Grid>
       </Grid>
-      <FooterDivider />
-      asdasdsad
     </FooterContainer>
   )
 }
