@@ -3,6 +3,7 @@ import styled from "@emotion/styled"
 
 import { Link } from "gatsby"
 import Grid from "@mui/material/Grid"
+import ProjectsFooter from "../../components/projectsFooter"
 
 import homeCard1 from "../../images/home-card-1.png"
 import amcMain from "../../images/proyectosPage/amc-main.png"
@@ -75,6 +76,7 @@ const CorporativosPage = () => {
           </ImageContainer>
         </Grid>
       </Grid>
+      <ProjectsFooter />
     </>
   )
 }

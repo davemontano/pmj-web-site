@@ -4,6 +4,7 @@ import styled from "@emotion/styled"
 import Grid from "@mui/material/Grid"
 import Box from "@mui/material/Box"
 import { Link } from "gatsby"
+import ProjectsFooter from "../../components/projectsFooter"
 
 import projectsJumbo from "../../images/projects-jumbo.png"
 import cci from "../../images/multicines/cci.png"
@@ -86,6 +87,7 @@ const ComercialesPage = () => {
             </ImageContainer>
           </Grid>
         </Grid>
+        <ProjectsFooter />
       </Box>
     </>
   )
