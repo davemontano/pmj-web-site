@@ -22,7 +22,7 @@ const NavContainer = styled.nav`
   font-weight: 700;
   font-size: 15px;
   line-height: 18px;
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
 `
 
 const LogoButton = styled.ul`
@@ -39,8 +39,11 @@ const NavButton = styled.ul`
   padding-bottom: 58px;
   text-transform: uppercase;
   text-align: center;
+  :hover:after {
+    background-color: #e81818;
+  }
   :hover {
-    background-color: #E81818;
+    background-color: #e81818;
   }
 `
 
@@ -71,7 +74,11 @@ const NavBar = () => {
             <Grid container columns={10}>
               <Grid item xs={2}>
                 <NavButton>
-                  <NavLink to="/" activeStyle={{"background-color": "#E81818"}}>Home</NavLink>
+                  <NavLink
+                    to="/"
+                  >
+                    Home
+                  </NavLink>
                 </NavButton>
               </Grid>
               <Grid item xs={2}>
@@ -93,9 +100,22 @@ const NavBar = () => {
                   }}
                   TransitionComponent={Fade}
                 >
-                  <MenuList>
-                    <MenuItem onClick={handleClose}>Corporativos</MenuItem>
-                    <MenuItem onClick={handleClose}>Comerciales</MenuItem>
+                  <MenuList
+                    sx={{
+                      width: 310,
+                      height: 102,
+                      fontSize: 15,
+                      textTransform: "uppercase",
+                      fontWeight: 400,
+                      lineHeight: "30px",
+                    }}
+                  >
+                    <MenuItem >
+                      <Link to="/proyectos/corporativos">Corporativos</Link>
+                    </MenuItem>
+                    <MenuItem >
+                      <Link to="/proyectos/comerciales">Comerciales</Link>
+                    </MenuItem>
                     <MenuItem onClick={handleClose}>Inmobiliarios</MenuItem>
                   </MenuList>
                 </Menu>

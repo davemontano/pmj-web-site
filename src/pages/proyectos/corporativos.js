@@ -6,6 +6,8 @@ import Grid from "@mui/material/Grid"
 
 import homeCard1 from "../../images/home-card-1.png"
 import amcMain from "../../images/proyectosPage/amc-main.png"
+import bcoPichincha from "../../images/corporativos/banco-pichincha.png"
+import zaimella from "../../images/corporativos/zaimella.png"
 
 const ImageContainer = styled.div`
   position: relative;
@@ -34,6 +36,9 @@ const ImageLink = styled(Link)`
   font-size: 26px;
   line-height: 32px;
   letter-spacing: 0.07em;
+  :visited {
+    color: #ffffff;
+  }
 `
 
 const CorporativosPage = () => {
@@ -55,6 +60,18 @@ const CorporativosPage = () => {
           <ImageContainer>
             <img src={amcMain} width="100%" height="400px" />
             <ImageLink>AMC Ecuador</ImageLink>
+          </ImageContainer>
+        </Grid>
+        <Grid item xs={6}>
+          <ImageContainer>
+            <img src={bcoPichincha} width="100%" height="400px" />
+            <ImageLink>Banco Pichincha</ImageLink>
+          </ImageContainer>
+        </Grid>
+        <Grid item xs={6}>
+          <ImageContainer>
+            <img src={zaimella} width="100%" height="400px" />
+            <ImageLink>Zaimella</ImageLink>
           </ImageContainer>
         </Grid>
       </Grid>

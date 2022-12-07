@@ -3,11 +3,10 @@ import styled from "@emotion/styled"
 
 import Grid from "@mui/material/Grid"
 import Box from "@mui/material/Box"
-import { Link } from "gatsby"
 
-import projectsJumbo from "../../images/projects-jumbo.png"
-import cci from "../../images/multicines/cci.png"
-import meramexair from "../../images/comerciales/meramexair.png"
+import projectsJumbo from "../../../images/projects-jumbo.png"
+import cci from "../../../images/multicines/cci.png"
+import rio from "../../../images/multicines/rio.png"
 
 const ImageContainer = styled.div`
   position: relative;
@@ -45,23 +44,8 @@ const ImageText = styled.h3`
   line-height: 26px;
   letter-spacing: 0.07em;
   bottom: 11px;
-  color: #ffffff;
+  color: #FFFFFF;
   left: 35px;
-`
-
-const ImageLink = styled(Link)`
-  position: absolute;
-  bottom: 20px;
-  left: 33px;
-  color: #fff;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 32px;
-  letter-spacing: 0.07em;
-  :visited {
-    color: #ffffff;
-  }
 `
 
 const ComercialesPage = () => {
@@ -74,15 +58,19 @@ const ComercialesPage = () => {
       <Box sx={{ flexGrow: 1 }}>
         <Grid container>
           <Grid item xs={6}>
+            <ProjectTitle>Multicines Ecuador</ProjectTitle>
+          </Grid>
+          <Grid item xs={6}></Grid>
+          <Grid item xs={6}>
             <ImageContainer>
               <img src={cci} width="100%" height="370px" />
-              <ImageLink to="/proyectos/comerciales/multicines">Multicines Ecuador</ImageLink>
+              <ImageText>CCI</ImageText>
             </ImageContainer>
           </Grid>
           <Grid item xs={6}>
             <ImageContainer>
-              <img src={meramexair} width="100%" height="370px" />
-              <ImageLink>Restaurantes Aeropuerto Quito</ImageLink>
+              <img src={rio} width="100%" height="370px" />
+              <ImageText>Mall del Rio</ImageText>
             </ImageContainer>
           </Grid>
         </Grid>
