@@ -70,7 +70,7 @@ const NavBar = () => {
             <Grid container columns={10}>
               <Grid item xs={2}>
                 <NavButton>
-                  <NavLink to="/">Home</NavLink>
+                  <NavLink to="/" activeStyle={{"background-color": "#E81818"}}>Home</NavLink>
                 </NavButton>
               </Grid>
               <Grid item xs={2}>

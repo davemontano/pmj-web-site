@@ -12,6 +12,7 @@ const FooterContainer = styled.div`
   height: 302px;
   width: 100%;
   background-color: #322b2b;
+  margin-top: 100px;
 `
 
 const IconsContainer = styled.div`
