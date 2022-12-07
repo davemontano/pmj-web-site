@@ -68,6 +68,7 @@ const SimpleCardLink = styled(Link)`
   text-transform: uppercase;
   color: #3f3f3f;
   text-decoration: underline;
+  padding-top: 106px;
 `
 
 const Card = ({ header, content, link, simple }) => {

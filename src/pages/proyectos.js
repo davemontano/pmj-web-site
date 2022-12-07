@@ -16,7 +16,7 @@ const ProyectosPage = () => {
       <Box sx={{ flexGrow: 1 }}>
         <Grid container>
           <Grid item xs={6}>
-            <img src={projectsCorporative} width="100%" height={622} />
+            <img src={projectsCorporative}  height={622} />
           </Grid>
           <Grid item xs={6}>
             <Card

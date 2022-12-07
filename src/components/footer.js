@@ -8,7 +8,7 @@ import TwitterIcon from "@mui/icons-material/Twitter"
 import InstagramIcon from "@mui/icons-material/Instagram"
 import LinkedInIcon from "@mui/icons-material/LinkedIn"
 
-const FooterContainer = styled.div`
+const FooterContainer = styled.footer`
   height: 302px;
   width: 100%;
   background-color: #322b2b;

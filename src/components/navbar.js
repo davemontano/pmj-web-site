@@ -22,6 +22,7 @@ const NavContainer = styled.nav`
   font-weight: 700;
   font-size: 15px;
   line-height: 18px;
+  background-color: #D9D9D9;
 `
 
 const LogoButton = styled.ul`

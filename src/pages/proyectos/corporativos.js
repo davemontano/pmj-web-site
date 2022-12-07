@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 import Grid from "@mui/material/Grid"
 
 import homeCard1 from "../../images/home-card-1.png"
-import carouselImage1 from "../../images/home-carousel-1.png"
+import amcMain from "../../images/proyectosPage/amc-main.png"
 
 const ImageContainer = styled.div`
   position: relative;
@@ -48,12 +48,12 @@ const CorporativosPage = () => {
         <Grid item xs={6}>
           <ImageContainer>
             <img src={homeCard1} width="100%" height="400px" />
-            <ImageLink>Aliservis S.A.</ImageLink>
+            <ImageLink to="/proyectos/corporativos/aliservis" >Aliservis S.A.</ImageLink>
           </ImageContainer>
         </Grid>
         <Grid item xs={6}>
           <ImageContainer>
-            <img src={carouselImage1} width="100%" height="400px" />
+            <img src={amcMain} width="100%" height="400px" />
             <ImageLink>AMC Ecuador</ImageLink>
           </ImageContainer>
         </Grid>
