@@ -39,7 +39,8 @@ const CardDivider = styled.hr`
   border: 3px solid rgba(0, 0, 0, 0.51);
   margin-top: 30px;
   margin-bottom: 30px;
-  width: 100%;
+  width: 141px;
+  height: 0px;
 `
 
 const CardLinkContainer = styled.div`
