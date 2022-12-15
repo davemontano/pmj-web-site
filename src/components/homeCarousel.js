@@ -2,6 +2,7 @@ import React from "react"
 import "react-responsive-carousel/lib/styles/carousel.min.css" // requires a loader
 import { Carousel } from "react-responsive-carousel"
 import styled from "@emotion/styled"
+import { StaticImage } from "gatsby-plugin-image"
 
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos"
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos"
@@ -60,7 +61,7 @@ const HomeCarousel = () => {
           renderArrowPrev={PrevButton}
         >
           <div>
-            <img src={carouselImage1} height={800} />
+            <StaticImage src="../images/home-carousel-1.png" height={800} width={1386} />
           </div>
           <div>
             <img src={carouselImage2} height={800} />
