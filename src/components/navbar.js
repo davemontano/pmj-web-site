@@ -1,15 +1,15 @@
-import React from "react";
-import styled from "@emotion/styled";
+import React from "react"
+import styled from "@emotion/styled"
 
-import Grid from "@mui/material/Grid";
-import Menu from "@mui/material/Menu";
-import MenuItem from "@mui/material/MenuItem";
-import MenuList from "@mui/material/MenuList";
-import Fade from "@mui/material/Fade";
-import { Link } from "gatsby";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import Grid from "@mui/material/Grid"
+import Menu from "@mui/material/Menu"
+import MenuItem from "@mui/material/MenuItem"
+import MenuList from "@mui/material/MenuList"
+import Fade from "@mui/material/Fade"
+import { Link } from "gatsby"
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown"
 
-import pmjLogo from "../images/pmj-logo.png";
+import pmjLogo from "../images/pmj-logo.png"
 
 const NavContainer = styled.nav`
   position: fixed;
@@ -23,13 +23,13 @@ const NavContainer = styled.nav`
   font-size: 15px;
   line-height: 18px;
   background-color: #525150;
-`;
+`
 
 const LogoButton = styled.ul`
   margin-top: 0;
   // width: 353px;
   // align-items: center;
-`;
+`
 
 const NavButton = styled.ul`
   //width: 189px;
@@ -45,21 +45,21 @@ const NavButton = styled.ul`
   :hover {
     background-color: #e81818;
   }
-`;
+`
 
 const NavLink = styled(Link)`
   //text-align: center;
-`;
+`
 
 const NavBar = () => {
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const open = Boolean(anchorEl);
+  const [anchorEl, setAnchorEl] = React.useState(null)
+  const open = Boolean(anchorEl)
   const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
+    setAnchorEl(event.currentTarget)
+  }
   const handleClose = () => {
-    setAnchorEl(null);
-  };
+    setAnchorEl(null)
+  }
 
   return (
     <>
@@ -119,7 +119,7 @@ const NavBar = () => {
               </Grid>
               <Grid item xs={2}>
                 <NavButton id="servicios-button" onClick={handleClick}>
-                  Servicios
+                  <Link to="/servicios">Servicios</Link>
                 </NavButton>
                 <Menu
                   id="servicios-menu"
@@ -148,10 +148,10 @@ const NavBar = () => {
                       </Link>
                     </MenuItem>
                     <MenuItem>
-                      <Link to="/proyectos/construccion">Construcción</Link>
+                      <Link to="/servicios/construccion">Construcción</Link>
                     </MenuItem>
                     <MenuItem onClick={handleClose}>
-                      Gestion Inmobiliaria
+                      <Link to="/servicios/gestion">Gestion Inmobiliaria</Link>
                     </MenuItem>
                   </MenuList>
                 </Menu>
@@ -164,7 +164,7 @@ const NavBar = () => {
         </Grid>
       </NavContainer>
     </>
-  );
-};
+  )
+}
 
-export default NavBar;
+export default NavBar
