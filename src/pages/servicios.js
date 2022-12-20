@@ -7,8 +7,9 @@ import Box from "@mui/material/Box"
 import Card from "../components/card"
 
 import projectsJumbo from "../images/projects-jumbo.png"
-import projectsCorporative from "../images/projects-corporative.png"
-import homeCard2 from "../images/home-card-2.jpg"
+import servicios1 from "../images/servicios/servicios-1.png"
+import servicios2 from "../images/servicios/servicios-2.png"
+import servicios3 from "../images/servicios/servicios-3.png"
 
 const ImageContainer = styled.div`
   position: relative;
@@ -27,32 +28,42 @@ const BannerText = styled.h2`
   left: 100px;
 `
 
-const ProyectosPage = () => {
+const ServiciosPage = () => {
   return (
-    <> 
+    <>
       <Box sx={{ flexGrow: 1 }}>
         <ImageContainer>
-        <img src={projectsJumbo} width="100%" />
-        <BannerText>Proyectos</BannerText>
+          <img src={projectsJumbo} width="100%" />
+          <BannerText>Servicios</BannerText>
         </ImageContainer>
         <Grid container>
           <Grid item xs={6}>
-            <img src={projectsCorporative} width="100%" height={622} />
+            <img src={servicios1} width="100%" height={622} />
           </Grid>
           <Grid item xs={6}>
             <Card
               simple
-              link={{ text: "Corporativos", url: "/proyectos/corporativos" }}
+              link={{ text: "Planificacion y Diseño", url: "/servicios/planificacion" }}
             />
           </Grid>
           <Grid item xs={6}>
             <Card
               simple
-              link={{ text: "Comerciales", url: "/proyectos/comerciales" }}
+              link={{ text: "Construccion", url: "/servicios/construccion" }}
             />
           </Grid>
           <Grid item xs={6}>
-            <img src={homeCard2} width="100%" height={622} />
+            <img src={servicios2} width="100%" height={622} />
+          </Grid>
+
+          <Grid item xs={6}>
+            <img src={servicios3} width="100%" height={622} />
+          </Grid>
+          <Grid item xs={6}>
+            <Card
+              simple
+              link={{ text: "Gestion Inmobiliaria", url: "/servicios/gestion" }}
+            />
           </Grid>
         </Grid>
       </Box>
@@ -60,4 +71,4 @@ const ProyectosPage = () => {
   )
 }
 
-export default ProyectosPage
+export default ServiciosPage
