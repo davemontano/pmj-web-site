@@ -25,15 +25,18 @@ const NavContainer = styled.nav`
   background-color: #525150;
 `
 
-const LogoButton = styled.ul`
+const LogoButton = styled.div`
   margin-top: 0;
+  padding-left: 100px;
   // width: 353px;
   // align-items: center;
 `
 
-const NavButton = styled.ul`
-  //width: 189px;
-  //height: 140px;
+const NavButton = styled.div`
+  width: 189px;
+  height: 24px;
+  background-color: #525150;
+  border: none;
   margin-top: 0px;
   padding-top: 58px;
   padding-bottom: 58px;
@@ -45,6 +48,14 @@ const NavButton = styled.ul`
   :hover {
     background-color: #e81818;
   }
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
 `
 
 const NavLink = styled(Link)`
@@ -64,10 +75,10 @@ const NavBar = () => {
   return (
     <>
       <NavContainer>
-        <Grid container>
+        <Grid container spacing={0}>
           <Grid item xs={3}>
             <LogoButton>
-              <img src={pmjLogo} />
+              <img src={pmjLogo} style={{width: "6.9vw"}}/>
             </LogoButton>
           </Grid>
           <Grid item xs={9}>

@@ -13,6 +13,8 @@ import homeCard3 from "../images/home-card-3.png"
 import amcLogo from "../images/logos/amc-bn.png"
 import multicinesLogo from "../images/logos/multicines-bn.png"
 import dominosLogo from "../images/logos/dominos-bn.png"
+import equividaLogo from "../images/logos/equivida-bn.png"
+import aliserviceLogo from "../images/logos/aliservice-bn.png"
 
 const BottomDivider = styled.hr`
   border: 1px solid rgba(0, 0, 0, 0.51);
@@ -26,7 +28,7 @@ const IndexPage = () => {
     <main>
       <HomeCarousel></HomeCarousel>
       <Box sx={{ flexGrow: 1 }}>
-        <Grid container>
+        <Grid container justifyContent="space-around" alignItems="center">
           <Grid item xs={6}>
             <img src={homeCard1} width="100%" height={622} />
           </Grid>
@@ -60,17 +62,23 @@ const IndexPage = () => {
           <Grid item xs={12}>
             <BottomDivider />
           </Grid>
-          <Grid item xs={3} />
-          <Grid item xs={2}>
+          <Grid item xs={2} />
+          <Grid item xs={1}>
             <img src={amcLogo} />
           </Grid>
-          <Grid item xs={2}>
+          <Grid item xs={1}>
             <img src={multicinesLogo} />
           </Grid>
-          <Grid item xs={2}>
+          <Grid item xs={1}>
             <img src={dominosLogo} />
           </Grid>
-          <Grid item xs={3} />
+          <Grid item xs={2}>
+            <img src={equividaLogo} />
+          </Grid>
+          <Grid item xs={2}>
+            <img src={aliserviceLogo} />
+          </Grid>
+          <Grid item xs={2} />
         </Grid>
       </Box>
     </main>
