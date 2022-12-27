@@ -8,6 +8,7 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos"
 const Container = styled.div`
   height: 235px;
   background: rgba(217, 217, 217, 0.33);
+  margin-bottom: -100px;
 `
 
 const LinkDecorator = styled.hr`
