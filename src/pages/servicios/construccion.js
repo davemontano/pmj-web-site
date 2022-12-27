@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "@emotion/styled"
 
-import Grid from "@mui/material/Grid"
+import ProjectsFooter from "../../components/projectsFooter"
 import Box from "@mui/material/Box"
 
 import homeCard2 from "../../images/home-card-2.jpg"
@@ -92,6 +92,13 @@ const ConstruccionPage = () => {
           </p>
         </PageArticle>
       </Box>
+      <ProjectsFooter
+          firstLink={{ text: "Planificacion y Diseno", url: "/servicios/planificacion" }}
+          secondLink={{
+            text: "Gestion Inmobiliaria",
+            url: "/servicios/gestion",
+          }}
+        />
     </>
   )
 }

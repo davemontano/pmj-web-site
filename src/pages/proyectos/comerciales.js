@@ -87,7 +87,10 @@ const ComercialesPage = () => {
             </ImageContainer>
           </Grid>
         </Grid>
-        <ProjectsFooter />
+        <ProjectsFooter
+        firstLink={{ text: "Corporativos", url: "/proyectos/corporativos" }}
+        secondLink={{ text: "Inmobiliarios", url: "/proyectos/inmobiliarios" }}
+      />
       </Box>
     </>
   )
