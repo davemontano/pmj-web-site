@@ -146,7 +146,10 @@ const EquipoPage = () => {
           </Grid>
         </Grid>
       </TeamMembersSection>
-      <ProjectsFooter />
+      <ProjectsFooter
+        firstLink={{ text: "Nosotros", url: "/nosotros/intro" }}
+        secondLink={{ text: "Sostenibilidad", url: "/nosotros/sostenibilidad" }}
+      />
     </>
   )
 }

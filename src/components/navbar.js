@@ -78,7 +78,7 @@ const NavBar = () => {
         <Grid container spacing={0}>
           <Grid item xs={3}>
             <LogoButton>
-              <img src={pmjLogo} style={{width: "6.9vw"}}/>
+              <img src={pmjLogo} style={{ width: "6.9vw" }} />
             </LogoButton>
           </Grid>
           <Grid item xs={9}>
@@ -94,78 +94,14 @@ const NavBar = () => {
                 </NavButton>
               </Grid>
               <Grid item xs={2}>
-                <NavButton onClick={handleClick} id="proyectos-button">
+                <NavButton id="proyectos-button">
                   <NavLink to="/proyectos">Proyectos</NavLink>
                 </NavButton>
-                <Menu
-                  id="proyectos-menu"
-                  anchorEl={anchorEl}
-                  open={open}
-                  onClose={handleClose}
-                  MenuListProps={{
-                    "aria-labelledby": "proyectos-button",
-                  }}
-                  TransitionComponent={Fade}
-                >
-                  <MenuList
-                    sx={{
-                      width: 310,
-                      height: 102,
-                      fontSize: 15,
-                      textTransform: "uppercase",
-                      fontWeight: 400,
-                      lineHeight: "30px",
-                      background: "#E5E5E5",
-                    }}
-                  >
-                    <MenuItem>
-                      <Link to="/proyectos/corporativos">Corporativos</Link>
-                    </MenuItem>
-                    <MenuItem>
-                      <Link to="/proyectos/comerciales">Comerciales</Link>
-                    </MenuItem>
-                    <MenuItem onClick={handleClose}>Inmobiliarios</MenuItem>
-                  </MenuList>
-                </Menu>
               </Grid>
               <Grid item xs={2}>
-                <NavButton id="servicios-button" onClick={handleClick}>
+                <NavButton id="servicios-button">
                   <Link to="/servicios">Servicios</Link>
                 </NavButton>
-                <Menu
-                  id="servicios-menu"
-                  anchorEl={anchorEl}
-                  open={open}
-                  onClose={handleClose}
-                  MenuListProps={{
-                    "aria-labelledby": "servicios-button",
-                  }}
-                  TransitionComponent={Fade}
-                >
-                  <MenuList
-                    sx={{
-                      width: 310,
-                      height: 102,
-                      fontSize: 15,
-                      textTransform: "uppercase",
-                      fontWeight: 400,
-                      lineHeight: "30px",
-                      background: "#E5E5E5",
-                    }}
-                  >
-                    <MenuItem>
-                      <Link to="/servicios/planificacion">
-                        Planificación y Diseño
-                      </Link>
-                    </MenuItem>
-                    <MenuItem>
-                      <Link to="/servicios/construccion">Construcción</Link>
-                    </MenuItem>
-                    <MenuItem onClick={handleClose}>
-                      <Link to="/servicios/gestion">Gestion Inmobiliaria</Link>
-                    </MenuItem>
-                  </MenuList>
-                </Menu>
               </Grid>
               <Grid item xs={2}>
                 <NavButton>Contacto</NavButton>

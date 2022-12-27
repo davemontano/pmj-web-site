@@ -43,7 +43,7 @@ const IndexPage = () => {
             <Card
               header="Experiencia"
               content="Inspiramos una experiencia de vida en todo momento."
-              link={{ text: "Conocenos", url: "/proyectos" }}
+              link={{ text: "Conocenos", url: "/nosotros/intro" }}
             />
           </Grid>
           <Grid item xs={6}>
@@ -56,7 +56,7 @@ const IndexPage = () => {
             <Card
               header="Sostenibilidad"
               content="Hacemos nuestro trabajo con pasión y compromiso. Innovamos constantemente nuestros procesos, con una visión de sostenibilidad"
-              link={{ text: "Leer Mas", url: "/proyectos" }}
+              link={{ text: "Leer Mas", url: "/nosotros/sostenibilidad" }}
             />
           </Grid>
           <Grid item xs={12}>

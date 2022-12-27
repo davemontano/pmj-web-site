@@ -9,6 +9,7 @@ import Card from "../components/card"
 import projectsJumbo from "../images/projects-jumbo.png"
 import projectsCorporative from "../images/projects-corporative.png"
 import homeCard2 from "../images/home-card-2.jpg"
+import projectsCard3 from "../images/projects-card-3.png"
 
 const ImageContainer = styled.div`
   position: relative;
@@ -53,6 +54,15 @@ const ProyectosPage = () => {
           </Grid>
           <Grid item xs={6}>
             <img src={homeCard2} width="100%" height={622} />
+          </Grid>
+          <Grid item xs={6}>
+            <img src={projectsCard3} width="100%" height={622} />
+          </Grid>
+          <Grid item xs={6}>
+            <Card
+              simple
+              link={{ text: "Inmobiliarios", url: "/proyectos/inmobiliarios" }}
+            />
           </Grid>
         </Grid>
       </Box>

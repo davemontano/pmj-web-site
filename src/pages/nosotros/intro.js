@@ -1,6 +1,8 @@
 import React from "react"
 import styled from "@emotion/styled"
 
+import ProjectsFooter from "../../components/projectsFooter"
+
 import teamJumbo from "../../images/team-jumbo.png"
 import teamJumbo2 from "../../images/team-jumbo-2.png"
 
@@ -126,6 +128,10 @@ const IntroPage = () => {
           </p>
         </OurHistoryText>
       </OurHistorySection>
+      <ProjectsFooter
+        firstLink={{ text: "Equipo", url: "/nosotros/equipo" }}
+        secondLink={{ text: "Sostenibilidad", url: "/nosotros/sostenibilidad" }}
+      />
     </>
   )
 }
