@@ -72,7 +72,7 @@ const CorporativosPage = () => {
         <Grid item xs={6}>
           <ImageContainer>
             <img src={zaimella} width="100%" height="400px" />
-            <ImageLink>Zaimella</ImageLink>
+            <ImageLink to="/proyectos/corporativos/zaimella" >Zaimella</ImageLink>
           </ImageContainer>
         </Grid>
       </Grid>
